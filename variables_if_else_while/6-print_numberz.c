@@ -12,7 +12,7 @@ while (number < 58)
 putchar(number);
 number++;
 }
-printf("\n");
+putchar('\n');
 return (0);
 }
 
