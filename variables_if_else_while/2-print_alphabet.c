@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-char ch = 65
+char ch = 65;
 while (ch != ch + 25)
 {
 putchar(ch);
