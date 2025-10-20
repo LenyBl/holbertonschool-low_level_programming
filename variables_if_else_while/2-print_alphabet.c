@@ -12,5 +12,6 @@ while (ch != 'z' + 1)
 putchar(ch);
 ch++;
 }
+printf("\n");
 return (0);
 }
