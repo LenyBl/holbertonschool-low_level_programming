@@ -10,7 +10,7 @@ char ch = 65;
 while (ch != ch + 25)
 {
 putchar(ch);
-ch++
+ch++;
 }
 return (0);
 }
