@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -Werror -Wextra "main".c -o "main"
+gcc -E main.c -o main.i
