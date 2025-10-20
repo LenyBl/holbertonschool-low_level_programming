@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-char ch = 65;
-while (ch != ch + 25)
+char ch = 'a';
+while (ch != 'z' + 1)
 {
 putchar(ch);
 ch++;
