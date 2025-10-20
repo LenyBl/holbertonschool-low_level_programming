@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc export CFILE=0-main.c
+gcc -Wall -Werror -Wextra "main".c -o "main"
