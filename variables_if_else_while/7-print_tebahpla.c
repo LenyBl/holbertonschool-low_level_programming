@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-char number = 57;
-while (number > 48)
+char number = 122;
+while (number > 96)
 {
 putchar(number);
 number--;
