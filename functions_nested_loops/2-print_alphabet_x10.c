@@ -13,7 +13,7 @@ while (n <= 10)
 while (ch <= 122)
 {
 _putchar(ch);
-ch++
+ch++;
 }
 _putchar('\n');
 n++;
