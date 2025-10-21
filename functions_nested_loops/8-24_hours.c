@@ -19,8 +19,11 @@ _putchar((hour % 10) + '0');
 _putchar(':');
 _putchar((minute / 10) + '0');
 _putchar((minute % 10) + '0');
+minute++
+if (minute == 59)
+{
 hour++;
-minute++;
+}
 _putchar('\n');
 }
 }
