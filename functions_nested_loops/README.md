@@ -7,7 +7,7 @@
 ![C](https://img.shields.io/badge/Language-C-blue)
 ![Build](https://img.shields.io/badge/Build-passing-brightgreen)
 ![Style](https://img.shields.io/badge/Code%20Style-Holberton-red)
-![License](https://img.shields.io/badge/License-MIT-lightgrey))
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ## 🧠 Objectifs du projet
 Ce projet développe les notions de **fonctions** et de **boucles imbriquées** (`nested loops`) en C.
