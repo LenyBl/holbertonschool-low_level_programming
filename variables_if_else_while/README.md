@@ -1,8 +1,14 @@
 
 ---
 
-## ✅ `variables_if_else_while/README.md`
+## 📁 `variables_if_else_while/README.md`
+
 ```markdown
+# C - Variables, if, else, while  
+![C](https://img.shields.io/badge/Language-C-blue.svg)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
+![Loops](https://img.shields.io/badge/Topic-Control_Flow-yellow.svg)
+![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)
 
 ## 🧠 Objectifs du projet
 Découvrir les **variables**, **conditions** et **boucles** en C :
