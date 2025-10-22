@@ -5,9 +5,9 @@
 ```markdown
 # C - Functions, nested loops  
 ![C](https://img.shields.io/badge/Language-C-blue)
-![Topic](https://img.shields.io/badge/Topic-Functions%20%26%20Loops-orange)
 ![Build](https://img.shields.io/badge/Build-passing-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
+![Style](https://img.shields.io/badge/Code%20Style-Holberton-red)
+![License](https://img.shields.io/badge/License-MIT-lightgrey))
 
 ## 🧠 Objectifs du projet
 Ce projet développe les notions de **fonctions** et de **boucles imbriquées** (`nested loops`) en C.
