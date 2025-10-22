@@ -1,8 +1,3 @@
-
----
-
-## ✅ `variables_if_else_while/README.md`
-```markdown
 # C - Variables, if, else, while  
 ![C](https://img.shields.io/badge/Language-C-blue.svg)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
@@ -18,15 +13,7 @@ Découvrir les **variables**, **conditions** et **boucles** en C :
 
 ---
 
-## 📘 Concepts clés
-- Génération de nombres aléatoires (`rand()`)
-- Tests de signe et de dernière valeur (`%`)
-- Affichage contrôlé via `putchar()`
-- Boucles pour parcourir alphabet et chiffres
-
----
-
-## 📂 Contenu typique
+## 📁 Contenu typique
 
 | Fichier | Description |
 |----------|-------------|
@@ -45,5 +32,4 @@ Découvrir les **variables**, **conditions** et **boucles** en C :
 
 ## ⚙️ Compilation
 ```bash
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 2-print_alphabet.c -o alphabet
-./alphabet
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 <fichier>.c -o <exécutable>
