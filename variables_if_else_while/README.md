@@ -1,8 +1,7 @@
 
 ---
 
-## 📁 `variables_if_else_while/README.md`
-
+## ✅ `variables_if_else_while/README.md`
 ```markdown
 # C - Variables, if, else, while  
 ![C](https://img.shields.io/badge/Language-C-blue.svg)
@@ -28,6 +27,7 @@ Découvrir les **variables**, **conditions** et **boucles** en C :
 ---
 
 ## 📂 Contenu typique
+
 | Fichier | Description |
 |----------|-------------|
 | `0-positive_or_negative.c` | Affiche si un nombre est positif, négatif ou nul |
