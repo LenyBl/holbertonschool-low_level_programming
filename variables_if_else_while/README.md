@@ -1,49 +1,48 @@
 
 ---
 
-## ⚙️ `variables_if_else_while/README.md`
+## ✅ `variables_if_else_while/README.md`
 ```markdown
 # C - Variables, if, else, while  
-![C](https://img.shields.io/badge/Language-C-blue)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Loops](https://img.shields.io/badge/Topic-Control%20Flow-yellow)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
+![C](https://img.shields.io/badge/Language-C-blue.svg)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
+![Loops](https://img.shields.io/badge/Topic-Control_Flow-yellow.svg)
+![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)
 
 ## 🧠 Objectifs du projet
-Ce projet approfondit la logique et le contrôle de flux en **C**, avec l’introduction :
-- Des **conditions** : `if`, `else if`, `else`
-- Des **boucles** : `while`
-- Des **variables** : `int`, `char`, `unsigned int`
-- Des opérateurs arithmétiques et logiques
+Découvrir les **variables**, **conditions** et **boucles** en C :
+- Utiliser `if`, `else if`, `else`
+- Comprendre les opérateurs (`>`, `<`, `==`, `%`)
+- Boucles avec `while`
+- Manipulation de caractères ASCII avec `putchar`
 
 ---
 
-## 📘 Concepts abordés
+## 📘 Concepts clés
 - Génération de nombres aléatoires (`rand()`)
-- Contrôle du signe (`>`, `<`, `==`)
-- Boucles de parcours et d’affichage (`while`)
-- Manipulation des caractères ASCII
-- Sortie standard (`putchar`, `printf`)
+- Tests de signe et de dernière valeur (`%`)
+- Affichage contrôlé via `putchar()`
+- Boucles pour parcourir alphabet et chiffres
 
 ---
 
 ## 📂 Contenu typique
 | Fichier | Description |
 |----------|-------------|
-| `0-positive_or_negative.c` | Vérifie si un nombre est positif, négatif ou nul |
-| `1-last_digit.c` | Affiche le dernier chiffre d’un nombre |
-| `2-print_alphabet.c` | Affiche l’alphabet en minuscule |
-| `3-print_alphabets.c` | Affiche alphabet minuscule + majuscule |
-| `4-print_alphabt.c` | Alphabet sans les lettres `q` et `e` |
-| `5-print_numbers.c` | Affiche les chiffres de 0 à 9 |
-| `6-print_numberz.c` | Idem mais sans `char` |
-| `7-print_tebahpla.c` | Affiche l’alphabet à l’envers |
-| `8-print_base16.c` | Affiche les chiffres en base 16 |
-| `9-print_comb.c` | Affiche les combinaisons de chiffres |
+| `0-positive_or_negative.c` | Affiche si un nombre est positif, négatif ou nul |
+| `1-last_digit.c` | Affiche le dernier chiffre |
+| `2-print_alphabet.c` | Affiche l’alphabet minuscule |
+| `3-print_alphabets.c` | Minuscule + majuscule |
+| `4-print_alphabt.c` | Alphabet sans `q` ni `e` |
+| `5-print_numbers.c` | Affiche 0–9 |
+| `6-print_numberz.c` | Affiche 0–9 sans `char` |
+| `7-print_tebahpla.c` | Alphabet à l’envers |
+| `8-print_base16.c` | Base 16 (hexadécimal) |
+| `9-print_comb.c` | Combinaisons de chiffres |
 
 ---
 
-## 💻 Exemple de compilation
+## ⚙️ Compilation
 ```bash
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 2-print_alphabet.c -o alphabet
 ./alphabet
