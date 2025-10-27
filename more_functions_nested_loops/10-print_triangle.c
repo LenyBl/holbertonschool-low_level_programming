@@ -20,15 +20,15 @@ void print_triangle(int size)
 	{
 		int j;
 		int k;
-		
+
 		for (j = size - 1; j >= 0; j--)
 		{
 			_putchar(' ');
+		}
 
-			for (k = 1; k <= size; k++)
-			{
-				_putchar('#');
-			}
+		for (k = 1; k <= size; k++)
+		{
+			_putchar('#');
 		}
 		_putchar('\n');
 	}
