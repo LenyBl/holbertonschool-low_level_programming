@@ -1,5 +1,5 @@
 #include "main.h"
-#include "stdio.h"
+#include "../functions_nested_loops/main.h"
 /**
  * _puts - Affiche une chaine de caractère avec un retour à la ligne
  *
@@ -13,8 +13,8 @@ void _puts(char *str)
 
 	for (i = 0; i[str] != '\0'; i++)
 	{
-		putchar(str[i]);
+		_putchar(str[i]);
 	}
 
-	putchar('\n');
+	_putchar('\n');
 }
