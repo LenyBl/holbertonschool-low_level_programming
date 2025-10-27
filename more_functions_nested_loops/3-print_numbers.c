@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "../functions_nested_loops/main.h"
 /**
  * print_numbers - affiche les chiffres de 0 à 9
  *
@@ -10,7 +10,7 @@ void print_numbers(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		putchar('0' + i);
+		_putchar('0' + i);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
