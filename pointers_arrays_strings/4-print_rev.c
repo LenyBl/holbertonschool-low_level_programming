@@ -1,19 +1,23 @@
 #include "main.h"
 /**
- * print_rev - Afficher une chaine de caractère inversé
+ * print_rev - affiche une chaîne de caractères en ordre inverse
+ * @s: pointeur vers la chaîne à afficher
  *
- * @s: Chaine de caractère
- *
- * Return: Retourne rien
+ * Return: void
  */
 void print_rev(char *s)
 {
-	int len = _strlen(s);
+	int c;
 	int i;
 
-	for (i = len - 1; i >= 0; i--)
+	for (c = 0; s[c] != '\0'; c++)
+	{
+	}
+
+	for (i = c - 1; i >= 0; i--)
 	{
 		_putchar(s[i]);
 	}
+
 	_putchar('\n');
 }
