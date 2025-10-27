@@ -1,5 +1,4 @@
 #include "main.h"
-#include "../functions_nested_loops/main.h"
 /**
  * _puts - Affiche une chaine de caractère avec un retour à la ligne
  *
