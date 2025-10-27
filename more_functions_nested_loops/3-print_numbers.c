@@ -6,7 +6,9 @@
  */
 void print_numbers(void)
 {
-	for (int i = 0; i < 10; i++)
+	int i = 0;
+
+	for (i; i < 10; i++)
 	{
 		printf("%d\n", i);
 	}
