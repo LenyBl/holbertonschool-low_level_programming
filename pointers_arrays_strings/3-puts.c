@@ -2,7 +2,7 @@
 /**
  * _puts - Affiche une chaine de caractère avec un retour à la ligne
  *
- * @str : Chaine de caractère 
+ * @str : Chaine de caractère
  *
  * Return: Rien
  */
