@@ -1,0 +1,23 @@
+#include "../functions_nested_loops/main.h"
+/**
+ * print_square - Affiche un carré
+ *
+ * @size: Taille du carré
+ *
+ * Return: Rien
+ */
+void print_square(int size)
+{
+	int i;
+
+	for (i = 0; i < size; i++)
+	{
+		int j;
+
+		for (j = 0; j < size; j++)
+		{
+			_putchar("#");
+		}
+		_putchar("\n");
+	}
+}
