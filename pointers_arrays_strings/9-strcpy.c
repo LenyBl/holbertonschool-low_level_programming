@@ -1,14 +1,12 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * _strcpy - Fonction qui copie la chaîne pointée par src
+ * _strcpy - copy string
+ * @dest: pointer of destination
+ * @src: pointer of source
  *
- * @dest: La destination
- * @src:  La source
- *
- * Return: Le pointeur vers dest
+ * Return: pointer of dest
  */
-char _strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int i;
 
@@ -16,7 +14,6 @@ char _strcpy(char *dest, char *src)
 	{
 		dest[i] = src[i];
 	}
-
 	dest[i] = '\0';
 
 	return (dest);
