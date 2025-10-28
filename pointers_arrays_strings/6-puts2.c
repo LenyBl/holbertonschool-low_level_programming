@@ -10,11 +10,16 @@ void puts2(char *str)
 {
 	int i;
 
-	char *new_str = str;
+	int c;
 
-	for (i = 0; new_str[i] != '\0'; i += 2)
+	for (c = 0; str[c] != '\0'; c++)
+		;
+
+	for (i = 0; i >= c; i += 2)
 	{
-		_putchar(new_str[i]);
+		_putchar(str[i]);
 	}
 	_putchar('\n');
+
 }
+
