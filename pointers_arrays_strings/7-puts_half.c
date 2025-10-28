@@ -12,15 +12,15 @@ void puts_half(char *str)
 
 	int i;
 
-	if (str <= 0)
+	for (c = 0; str[c] != '\0'; c++)
+		;
+
+	if (str[c] <= 0)
 	{
 		_putchar('\n');
 	}
 
-	for (c = 0; str[c] != '\0'; c++)
-		;
-
-	for (i = c / 2; i <= c; i++)
+	for (i = c / 2; i <= c ; i++)
 	{
 		_putchar(str[i]);
 	}
