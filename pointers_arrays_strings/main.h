@@ -13,4 +13,6 @@ int _putchar(int a);
 
 void print_rev(char *s);
 
+void puts2(char *str);
+
 #endif
