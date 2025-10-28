@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-#include <string.h>
 /**
  * puts2 - Affiche une chaine de caractère en affichant un caractère sur deux
  *
@@ -12,14 +10,7 @@ void puts2(char *str)
 {
 	int i;
 
-	char *new_str = malloc(strlen(str) + 1);
-
-	if (new_str == NULL)
-	{
-		return;
-	}
-
-	strcpy(new_str, str);
+	*str = str;
 
 	for (i = 0; str[i] != '\0'; i += 2)
 	{
