@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * *_strncat - Fonction qui permet de concaténer 2 chaines avec un nombre indiqué
+ * *_strncat - Fonction qui permet de concaténer 2 chaines avec un nombre
  *
  * @dest: Chaine de caractère
  * @src: Chaine de caractère
  * @n: Nombres de caractères à concaténer
- * 
+ *
  * Return: Les deux chaines concaténée
  */
 char *_strncat(char *dest, char *src, int n)
