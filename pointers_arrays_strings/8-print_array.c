@@ -11,16 +11,11 @@
  */
 void print_array(int *a, int n)
 {
-	int c;
-
 	int i;
 
-	for (c = 0; str[c] != '\0'; c++)
-		;
-
-	for (i = c; i <= n; i++)
+	for (i = 0; i < n; i++)
 	{
-		printf(str[i]);
+		printf("%d, ", a[i]);
 	}
 	
 	_putchar('\n');
