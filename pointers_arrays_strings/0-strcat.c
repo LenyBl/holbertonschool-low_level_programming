@@ -20,7 +20,7 @@ char _strcat(char *dest, char *src)
 		c++
 	}
 	
-	dest[i] = '\0';
+	dest[c] = '\0';
 
 	return (dest);
 }
