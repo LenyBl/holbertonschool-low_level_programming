@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <string.h>
 /**
  * puts2 - Affiche une chaine de caractère en affichant un caractère sur deux
  *
