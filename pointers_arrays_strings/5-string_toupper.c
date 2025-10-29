@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _string_toupper - convertit une chaîne en majuscules
+ * string_toupper - convertit une chaîne en majuscules
  *
  * @str: pointeur vers la chaîne à convertir
  *
