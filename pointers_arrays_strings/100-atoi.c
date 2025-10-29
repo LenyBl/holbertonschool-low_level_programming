@@ -23,7 +23,6 @@ int _atoi(char *s)
 		i++;
 	}
 
-	/* accumulate digits */
 	while (s[i] >= '0' && s[i] <= '9')
 	{
 		result = result * 10 + (s[i] - '0');
