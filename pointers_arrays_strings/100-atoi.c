@@ -4,7 +4,6 @@
  *
  * @s: pointeur vers la chaîne à convertir
  *
- *
  * Return: entier converti
  */
 int _atoi(char *s)
@@ -15,21 +14,21 @@ int _atoi(char *s)
 
 	while (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' ||
 		   s[i] == '\v' || s[i] == '\f' || s[i] == '\r')
-	{
 		i++;
-	}
 
-	while (s[i] == '+' || s[i] == '-')
+	while (s[i] != '\0' && !(s[i] >= '0' && s[i] <= '9'))
 	{
 		if (s[i] == '-')
-			sign *= -1;
+			sign = -sign;
 		i++;
 	}
 
+	/* accumulate digits */
 	while (s[i] >= '0' && s[i] <= '9')
 	{
 		result = result * 10 + (s[i] - '0');
 		i++;
 	}
+
 	return (result * sign);
 }
