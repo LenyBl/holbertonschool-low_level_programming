@@ -14,7 +14,9 @@ char *leet(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (int j = 0; leet_map[j] != '\0'; j++)
+		int j;
+
+		for (j = 0; leet_map[j] != '\0'; j++)
 		{
 			if (str[i] == leet_map[j])
 			{
