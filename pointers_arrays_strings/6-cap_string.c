@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * cap_string - met en majuscule les premières lettres de chaque mot
  *
