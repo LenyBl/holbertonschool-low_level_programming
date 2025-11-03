@@ -20,7 +20,7 @@ Il couvre les fondamentaux du langage C et de la programmation système bas nive
 | `hello_world/` | Premiers pas en C : “Hello, World”, compilation, affichage. |
 | `variables_if_else_while/` | Variables, conditions (`if`, `else`), boucles (`while`). |
 | `functions_nested_loops/` | Fonctions, boucles imbriquées et modularité. |
-| … | … (autres dossiers du cursus) |
+| `pointers_arrays_strings/` | Pointeurs, tableaux et chaînes de caractères |
 
 ---
 
