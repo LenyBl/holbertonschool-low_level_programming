@@ -6,7 +6,7 @@
  * @src: Pointer qui se fait copier ça mémoire
  * @n: Nombre de mémoire à copier
  *
- * Return : Retourne le pointer dest
+ * Return: Retourne le pointer dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
