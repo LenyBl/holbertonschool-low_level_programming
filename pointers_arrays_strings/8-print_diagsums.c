@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_diagsums - imprime la somme des diagonales d'une matrice carrée
  *
