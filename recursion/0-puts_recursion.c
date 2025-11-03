@@ -6,7 +6,7 @@
  *
  * Return: rien
  */
-void _print_recursion(char *s)
+void _puts_recursion(char *s)
 {
 	_puts(s);
 }
