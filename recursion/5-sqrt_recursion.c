@@ -1,7 +1,7 @@
 #include "main.h"
 #include <math.h>
 /**
- * _sqrt_recursion - fonction qui renvoie la racine carrée naturelle d'un nombre
+ * _sqrt_recursion - fonction renvoie la racine carrée naturelle d'un nombre
  *
  * @n: Nombre
  *
@@ -9,11 +9,11 @@
  */
 int _sqrt_recursion(int n)
 {
-	if (!sqrt(n))
+	if (n < 0)
 		return (-1);
 
-	if (sqrt(n))
-		return (1);
+	if (n == 0 || n == 1)
+		return (n);
 
-	return (n * sqrt(n - 1));
+	return (n * _sqrt_recursion(n - 1));
 }
