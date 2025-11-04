@@ -9,14 +9,15 @@
  */
 int is_prime_helper(int n, int guess)
 {
-	if (n % guess == 0)
+	if (guess == 1)
 	{
 		return (1);
 	}
-	else
+	if (n % guess == 0)
 	{
 		return (0);
 	}
+	return (is_prime_helper(n, guess - 1));
 }
 /**
  * is_prime_number - checks if a number is prime
