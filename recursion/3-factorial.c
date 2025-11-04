@@ -1,21 +1,18 @@
 #include "main.h"
+
 /**
- * factorial - fonction qui retourne le facteur d'un nombre donné
+ * factorial - calcule la factorielle d'un nombre n
+ * @n: nombre
  *
- * @n: Nombre
- *
- * Return: 0 si n est au dessus de 0 sinon -1
+ * Return: la factorielle de n, ou -1 si n < 0
  */
 int factorial(int n)
 {
-	if (n > 0)
-	{
-		return (1);
-	}
-	else if (n == 0)
-	{
-		return (-1);
-	}
+    if (n < 0)
+        return (-1);       
 
-	return (n * factorial(n - 1));
+    if (n == 0)
+        return (1);       
+
+    return (n * factorial(n - 1));  
 }
