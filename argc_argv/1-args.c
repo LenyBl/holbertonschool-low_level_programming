@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - imprime le nom du programme
+ * main - imprime le nombre d'arguments de la ligne de commande
  *
  * @argc: nombre d'arguments de la ligne de commande
  * @argv: tableau des arguments de la ligne de commande
@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	(void)argc;
-	printf("%s\n", argv[0]);
+	(void)argv;
+	printf("%d\n", argc - 1);
 	return (0);
 }
