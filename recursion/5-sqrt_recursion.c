@@ -1,5 +1,5 @@
 #include "main.h"
-#include "math.h"
+#include <math.h>
 /**
  * _sqrt_recursion - fonction qui renvoie la racine carrée naturelle d'un nombre
  *
