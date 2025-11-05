@@ -11,7 +11,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, j, k, sum = 0;
+	int j, k, sum = 0;
 	char *arg;
 
 	if (argc < 3)
