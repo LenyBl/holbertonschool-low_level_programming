@@ -14,15 +14,17 @@ int main(int argc, char *argv[])
 	int j, k, sum = 0;
 	char *arg;
 
+	if (argv[1][0] == '\0' || argv[2][0] == '\0')
+	{
+		putchar('0');
+		putchar('\n');	
+		return (0);
+	}
+
 	if (argc < 3)
 	{
 		printf("Error\n");
 		return (1);
-	}
-
-	if (argv[1][0] == '\0' || argv[2][0] == '\0')
-	{
-		return (0);
 	}
 
 	for (j = 1; j < argc; j++)
