@@ -7,7 +7,7 @@
  *
  * @argv: tableau d'arguments
  *
- * Return: 0 
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
