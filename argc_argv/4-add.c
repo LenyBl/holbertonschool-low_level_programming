@@ -1,45 +1,35 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- * main - additionne deux nombres entiers passés en arguments
+ * main - adds positive numbers
+ * @argc: argument count
+ * @argv: argument vector
  *
- * @argc: nombre d'arguments
- * @argv: tableau d'arguments
- *
- * Return: 0 si succès, 1 sinon
+ * Return: 0 if success, 1 if error
  */
 int main(int argc, char *argv[])
 {
-	int j, k, sum = 0;
-	char *arg;
+	int i, j, sum = 0;
 
-	if (argv[1][0] == '\0' || argv[2][0] == '\0')
+	if (argc == 1)
 	{
-		putchar('0');
-		putchar('\n');	
+		printf("0\n");
 		return (0);
 	}
 
-	if (argc < 3)
+	for (i = 1; i < argc; i++)
 	{
-		printf("Error\n");
-		return (1);
-	}
+		char *arg = argv[i];
 
-	for (j = 1; j < argc; j++)
-	{
-		arg = argv[j];
-		for (k = 0; arg[k] != '\0'; k++)
+		for (j = 0; arg[j] != '\0'; j++)
 		{
-			if (arg[k] == '-' && k == 0)
-				continue;
-			if (arg[k] < '0' || arg[k] > '9')
+			if (arg[j] < '0' || arg[j] > '9')
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
+
 		sum += atoi(arg);
 	}
 
