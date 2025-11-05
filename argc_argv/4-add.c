@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	if (arg[0] == '-' && arg[1] == '\0')
+	if (argv[1][0] == '\0' || argv[2][0] == '\0')
 	{
 		printf("Error\n");
 		return (1);
