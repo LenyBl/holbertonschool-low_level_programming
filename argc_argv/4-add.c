@@ -18,10 +18,10 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	int j;
+	int j = 1;
 	int sum = 0;
 
-	for (j = 1; j < i; j++)
+	for (j; j < i; j++)
 	{
 		char *arg = argv[j];
 
