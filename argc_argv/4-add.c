@@ -22,8 +22,7 @@ int main(int argc, char *argv[])
 
 	if (argv[1][0] == '\0' || argv[2][0] == '\0')
 	{
-		printf("Error\n");
-		return (1);
+		return (0);
 	}
 
 	for (j = 1; j < argc; j++)
