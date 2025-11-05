@@ -20,6 +20,12 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
+	if (arg[0] == '-' && arg[1] == '\0')
+	{
+		printf("Error\n");
+		return (1);
+	}
+
 	for (j = 1; j < argc; j++)
 	{
 		arg = argv[j];
