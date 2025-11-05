@@ -18,11 +18,15 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	for (int j = 1; j < i; j++)
+	int j;
+
+	for (j = 1; j < i; j++)
 	{
 		char *arg = argv[j];
 
-		for (int k = 0; arg[k] != '\0'; k++)
+		int k;
+
+		for (k = 0; arg[k] != '\0'; k++)
 		{
 			if (arg[k] < '0' || arg[k] > '9')
 			{
@@ -34,7 +38,7 @@ int main(int argc, char *argv[])
 
 	int sum = 0;
 
-	for (int j = 1; j < i; j++)
+	for (j = 1; j < i; j++)
 	{
 		sum += atoi(argv[j]);
 	}
