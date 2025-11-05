@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
 	}
 
 	int j;
+	int sum = 0;
 
 	for (j = 1; j < i; j++)
 	{
@@ -35,8 +36,6 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-
-	int sum = 0;
 
 	for (j = 1; j < i; j++)
 	{
