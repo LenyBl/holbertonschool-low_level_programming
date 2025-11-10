@@ -20,14 +20,7 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		int i;
-
-		for (i = 0; array != '\0'; i++)
-		{
-			array[i] = i;
-		}
-		
+		return (*array);
 		free(array);
-		return (array);
 	}
 }
