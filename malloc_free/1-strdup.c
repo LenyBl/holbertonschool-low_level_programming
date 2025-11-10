@@ -10,14 +10,18 @@
 char *_strdup(char *str)
 {
 	char *cpy;
+	int len;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	cpy = malloc(sizeof(char) * (strlen(str) + 1));
+	for (len = 0; str[len] != '\0'; len++)
+		;
 
+	cpy = malloc(sizeof(char) * (len + 1));
+	
 	if (cpy == NULL)
 	{
 		return (NULL);
