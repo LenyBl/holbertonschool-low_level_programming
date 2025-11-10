@@ -22,8 +22,9 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	
+
 	strdup = str;
 
+	free(strdup);
 	return (strdup);
 }
