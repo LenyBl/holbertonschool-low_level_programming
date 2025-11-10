@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 /**
  * _strdup - duplicates a string by allocating memory
  *
@@ -28,6 +27,11 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	strcpy(cpy, str);
+	for (len = 0; str[len] != '\0'; len++)
+	{
+		cpy[len] = str[len];
+	}
+	cpy[len] = '\0';
+
 	return (cpy);
 }
