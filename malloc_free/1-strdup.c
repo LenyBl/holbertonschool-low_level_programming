@@ -9,22 +9,19 @@
  */
 char *_strdup(char *str)
 {
-	char *strdup;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	strdup = malloc(sizeof(char));
+	str = malloc(sizeof(char));
 
-	if (strdup == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	strdup = str;
-
-	free(strdup);
-	return (strdup);
+	free(str);
+	return (str);
 }
