@@ -14,9 +14,9 @@ void free_grid(int **grid, int height)
 
 	if (grid == NULL)
 	{
-		return (NULL);
+		printf("Ce tableau est NULL");
 	}
-
+	
 	for (i = height; i > height; i--)
 	{
 		free(grid[i]);
