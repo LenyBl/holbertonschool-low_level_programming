@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _calloc - alloue de la memoire pour un tableau de nmemb elements de size octets chacun
- * et initialise toute la memoire a zero
+ * _calloc - alloue de la memoire pour un tableau de nmemb elements de size
+ *  octets chacun et initialise toute la memoire a zero
  *
  * @nmemb: le nombre d'elements
  * @size: la taille de chaque element en octets
