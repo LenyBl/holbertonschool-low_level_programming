@@ -1,10 +1,11 @@
 {
     "files.associations": {
-        "stdio.h": "c",
-        "main.h": "c",
-        "cmath": "c",
-        "cstdlib": "c",
-        "algorithm": "c"
-    },
+		"stdio.h": "c",
+		"main.h": "c",
+		"cmath": "c",
+		"cstdlib": "c",
+		"algorithm": "c",
+		"typeinfo": "cpp"
+	},
     "C_Cpp.errorSquiggles": "disabled"
 }
