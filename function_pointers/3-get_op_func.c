@@ -1,4 +1,7 @@
 #include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <stddef.h>
 /**
  * get_op_func - fonction qui retourne un pointeur
  * vers la fonction correspondant a l'operateur
