@@ -1,5 +1,4 @@
 #include "3-calc.h"
-#include "get_op_func.c"
 #include <stdio.h>
 #include <stdlib.h>
 /**
