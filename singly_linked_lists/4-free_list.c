@@ -8,8 +8,6 @@
  */
 void free_list(list_t *head)
 {
-	if (head == NULL)
-		printf("La liste est vide");
 
 	free(head);
 }
