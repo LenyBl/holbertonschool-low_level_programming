@@ -10,7 +10,7 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	if (str == NULL || *head == NULL)
-		return (-1);
+		return (*head);
 
 	*head->data = str;
 	*head->next = head;
