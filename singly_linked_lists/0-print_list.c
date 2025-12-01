@@ -7,12 +7,12 @@
  */
 size_t print_list(const list_t *h)
 {
-	while (h != nullptr)
+	while (h != NULL)
 	{
-		cout << head->data;
-		if (head->next)
-			cout << "->";
-
-		head = head->next;
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
+		else
+			printf("[%u] %s\n", h->len, h->str);
+		h = h->next;
 	}
 }
