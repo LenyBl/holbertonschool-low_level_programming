@@ -9,7 +9,7 @@ size_t print_dlistint(const dlistint_t *h)
 {
 	size_t count = 0;
 
-	while ()
+	while (h != NULL)
 	{
 		if (h == NULL)
 			printf("No data");
@@ -19,5 +19,5 @@ size_t print_dlistint(const dlistint_t *h)
 		h->next;
 	}
 	
-	return (0);
+	return (count);
 }
