@@ -9,9 +9,6 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	if (str == NULL || *head == NULL)
-		return (*head);
-
 	*head->data = str;
 	*head->next = head;
 
