@@ -8,16 +8,14 @@
 size_t print_dlistint(const dlistint_t *h)
 {
 	size_t count = 0;
+	dlistint_t temp = h;
 
-	while (h != NULL)
+	while (temp != NULL)
 	{
-		if (h == NULL)
-			printf("No data");
-		else 
-			printf("%i", h->n);
-		count++;
-		h->next;
+		printf("%d", temp->n);
+		temp = temp->next;
 	}
+	printf("\n");
 	
 	return (count);
 }
