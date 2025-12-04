@@ -1,45 +1,55 @@
-#include "main.h"
+#include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <stdio.h>
+
 /**
- * cp - copies the content of a file to another file
+ * main - copies the content of a file to another file
+ * @ac: number of arguments
+ * @av: array of arguments
  *
- * @file_from: source file
- * @file_to: destination file
- *
- * Return: 1 on success, -1 on failure
+ * Return: 0 on success, exits with code on error
  */
-int cp(const char *file_from, const char *file_to)
+int main(int ac, char **av)
 {
-	int fd_from, fd_to, r, w;
-	
+	int file_from, file_to, length_buffer, checkexit;
 	char buffer[1024];
-	if (file_from == NULL || file_to == NULL)
-		return (-1);
-	fd_from = open(file_from, O_RDONLY);
-	if (fd_from == -1)
-		return (-1);
-	fd_to = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
-	if (fd_to == -1)
+
+	if (ac != 3)
 	{
-		close(fd_from);
-		return (-1);
+		write(STDERR_FILENO, "Usage: cp file_from file_to\n", 28);
+		exit(97);
 	}
-	while ((r = read(fd_from, buffer, sizeof(buffer))) > 0)
+	file_from = open(av[1], O_RDONLY);
+	if (file_from == -1)
 	{
-		w = write(fd_to, buffer, r);
-		if (w == -1 || w != r)
-		{
-			close(fd_from);
-			close(fd_to);
-			return (-1);
-		}
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
+		exit(98);
 	}
-	if (r == -1)
+
+	file_to = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	if (file_to == -1)
 	{
-		close(fd_from);
-		close(fd_to);
-		return (-1);
+		close(file_from);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
+		exit(99);
 	}
-	close(fd_from);
-	close(fd_to);
-	return (1);
+
+	while ((length_buffer = read(file_from, buffer, 1024)) > 0)
+		write(file_to, buffer, length_buffer);
+
+	checkexit = close(file_from);
+	if (checkexit == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
+		exit(100);
+	}
+
+	checkexit = close(file_to);
+	if (checkexit == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to);
+		exit(100);
+	}
+	return (0);
 }
